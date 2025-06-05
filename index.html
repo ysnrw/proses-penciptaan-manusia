@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pelajari proses penciptaan manusia dari sudut pandang Islam (Al-Qur'an & Hadis) dan Sains modern (biologi & embriologi). Temukan titik temu dan keajaiban di baliknya.">
+  <meta name="keywords" content="penciptaan manusia, islam, sains, al-quran, embriologi, biologi, proses kejadian manusia">
+  <meta name="author" content="Yusuf Nurwahid">
+  <meta name="copyright" content="Proyek Pendidikan Agama Islam 2025">
+  <title>Proses Penciptaan Manusia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+  <header id="mainHeader">
+    <h1>Proses Penciptaan Manusia</h1>
+    <p>Sudut Pandang Islam dan Sains Modern</p>
+    <div class="header-controls">
+        <nav id="mainNavInHeader"> 
+          <a href="#ringkasan">Ringkasan</a>
+          <a href="#islam">Islam</a>
+          <a href="#sains">Sains</a>
+          <a href="#kesimpulan">Kesimpulan</a>
+        </nav>
+        <button id="darkModeToggleHeader" class="dark-mode-toggle" aria-label="Toggle Dark Mode" title="Ganti Tema">
+            <span class="icon-sun">☀️</span><span class="icon-moon">🌙</span>
+        </button>
+    </div>
+  </header>
+
+  <button id="floatingMenuButton" aria-label="Buka Menu">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
+  <div id="expandedMenuPopup">
+    <div class="expanded-menu-content">
+      <nav id="popupNav">
+        <a href="#ringkasan">Ringkasan</a>
+        <a href="#islam">Islam</a>
+        <a href="#sains">Sains</a>
+        <a href="#kesimpulan">Kesimpulan</a>
+      </nav>
+      <button id="darkModeTogglePopup" class="dark-mode-toggle" aria-label="Toggle Dark Mode" title="Ganti Tema">
+        <span class="icon-sun">☀️</span><span class="icon-moon">🌙</span>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <section id="ringkasan">
+        <h2>Ringkasan Materi</h2>
+        <p>
+            Assalamu'alaikum wr.wb, disini kita akan menjelajahi dan membandingkan perspektif mengenai proses penciptaan manusia dari dua sudut pandang utama: ajaran Islam yang bersumber dari Al-Qur'an dan Hadis, serta temuan sains modern, khususnya dalam bidang biologi dan embriologi.
+        </p>
+        <p>
+            Kita akan menggali tahapan-tahapan penciptaan sebagaimana dijelaskan dalam teks-teks keagamaan dan melihat bagaimana ilmu pengetahuan kontemporer menggambarkan perkembangan embrio manusia dari konsepsi hingga kelahiran. Tujuan dari penjelajahan ini adalah untuk memperkaya pemahaman kita, menemukan potensi titik temu, serta mengapresiasi keajaiban dan kompleksitas di balik eksistensi manusia.
+        </p>
+    </section>
+
+    <section id="islam">
+      <h2>Sudut Pandang Islam</h2>
+      <img src="img/islampict.jpg" alt="Masjid" class="section-img"/>
+      <ul class="point-list" id="islamicPoints"></ul>
+    </section>
+
+    <section id="sains">
+      <h2>Sudut Pandang Sains</h2>
+      <img src="img/sainspict.jpg" alt="Biologi dan Embrio" class="section-img" />
+      <ul class="point-list" id="sciencePoints"></ul>
+    </section>
+
+    <section id="kesimpulan">
+      <h2>Kesimpulan</h2>
+      <p>
+        Dari penjelasan di atas, dapat disimpulkan bahwa penciptaan manusia menurut Islam dan sains memiliki titik temu dalam hal tahapan prosesnya, meskipun pendekatan yang digunakan berbeda. Islam menekankan aspek spiritual dan tujuan penciptaan, sedangkan sains menyoroti proses biologis yang dapat diamati. Keduanya menunjukkan bahwa penciptaan manusia adalah proses yang sangat kompleks dan menakjubkan, yang mencerminkan kekuasaan Allah serta keajaiban alam ciptaan-Nya.
+      </p>
+    </section>
+  </div>
+
+  <div class="popup" id="detailPopup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closeDetailPopup()">&times;</span>
+      <div id="popupText"></div>
+    </div>
+  </div>
+
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Kembali ke atas">&uarr;</button>
+
+  <footer>
+    &copy; 2025 - Proyek Pendidikan Agama Islam
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
