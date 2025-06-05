@@ -353,6 +353,7 @@ body.dark-mode .dark-mode-toggle .icon-sun {
     margin: auto;
     animation: fadeIn 1s ease-in-out;
     transition: color 0.3s ease; 
+    text-align: justify;
 }
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -435,6 +436,7 @@ body.dark-mode .point-list li::before {
     color: var(--text-detail-popup);
     padding: 2rem;
     border-radius: 12px;
+    text-align: justify;
     width: 100%;
     max-width: 600px;
     max-height: 85vh;
